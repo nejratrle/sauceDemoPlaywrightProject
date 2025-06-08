@@ -11,7 +11,7 @@ This project is a UI test automation framework for [SauceDemo](https://www.sauce
 - Includes test assertions and helper methods for common actions
 
 ## Project Structure
-
+```
 sauceDemoPlaywrightProject/
 ├── pages/ # Page Object classes
 ├── tests/ # Test specifications grouped by feature
@@ -19,7 +19,7 @@ sauceDemoPlaywrightProject/
 ├── test-data/ # External test data in JSON format
 ├── playwright.config.ts # Playwright test runner configuration
 └── README.md # Project overview and documentation
-
+```
 
 ## Getting Started
 
