@@ -1,0 +1,32 @@
+{
+    "users": {
+        "Standard User": {
+            "username": "standard_user",
+                "password": "secret_sauce",
+                    "firstName": "Standard",
+                        "lastName": "User",
+                            "postalCode": "10000"
+        },
+        "Locked Out User": {
+            "username": "locked_out_user",
+                "password": "secret_sauce",
+                    "firstName": "",
+                        "lastName": "",
+                            "postalCode": ""
+        },
+        "Problem User": {
+            "username": "problem_user",
+                "password": "secret_sauce",
+                    "firstName": "Problem",
+                        "lastName": "User",
+                            "postalCode": "20000"
+        },
+        "Error User": {
+            "username": "error_user",
+                "password": "secret_sauce",
+                    "firstName": "Error",
+                        "lastName": "User",
+                            "postalCode": "30000"
+        }
+    }
+}
