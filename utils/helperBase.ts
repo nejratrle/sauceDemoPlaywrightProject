@@ -9,21 +9,11 @@ export class HelperBase {
 
     async waitForNumberOfSeconds(timeInSeconds: number) {
         await this.page.waitForTimeout(timeInSeconds * 1000)
+        // This method can be used in cases of slow-loading elements
     }
 
     async getCurrentUrl() {
         return this.page.url()
     }
 
-    async isElementVisible(selector: string) {
-        return await this.page.locator(selector).isVisible()
-    }
-
-    async clickElement(selector: string) {
-        await this.page.locator(selector).click()
-    }
-
-    async fillInput(selector: string, value: string) {
-        await this.page.locator(selector).fill(value)
-    }
 }
