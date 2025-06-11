@@ -2,7 +2,7 @@ import { test } from '@playwright/test'
 import { PageManager } from '../pages/pageManager'
 
 test.beforeEach(async ({ page }) => {
-    await page.goto('https://www.saucedemo.com/')
+    await page.goto('/')
 })
 
 test('Standard User can make a purchase', async ({ page }) => {

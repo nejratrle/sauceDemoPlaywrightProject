@@ -2,7 +2,7 @@ import { test } from '@playwright/test'
 import { PageManager } from '../pages/pageManager'
 
 test.beforeEach(async ({ page }) => {
-    await page.goto('https://www.saucedemo.com/')
+    await page.goto('/')
 })
 
 test('Sort A to Z - Standard User', async ({ page }) => {

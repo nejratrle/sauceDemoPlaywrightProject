@@ -43,7 +43,7 @@ export class LoginPage extends HelperBase {
 
     async clickLoginButtonForSuccess() {
         await this.loginButton.click()
-        const url = await this.page.url()
+        const url = await this.getCurrentUrl()
         if (!url.includes('inventory.html')) {
             throw new Error('Login failed: User not redirected to HomePage.')
         }
@@ -53,7 +53,7 @@ export class LoginPage extends HelperBase {
 
     async clickLoginButtonForFailure() {
         await this.loginButton.click()
-        const url = await this.page.url()
+        const url = await this.getCurrentUrl()
         if (url.includes('inventory.html')) {
             throw new Error('Login succeeded unexpectedly.')
         }
